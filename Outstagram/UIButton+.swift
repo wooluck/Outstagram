@@ -1,0 +1,20 @@
+//
+//  UIButton+.swift
+//  Outstagram
+//
+//  Created by luck woo on 2022/04/05.
+//
+
+import UIKit
+
+extension UIButton {
+    func setImage(systemName: String) {
+        contentHorizontalAlignment = .fill
+        contentVerticalAlignment = .fill
+        
+        imageView?.contentMode = .scaleAspectFit
+        imageEdgeInsets = .zero
+        
+        setImage(UIImage(systemName: systemName), for: .normal)
+    }
+}
